@@ -1,2 +1,2 @@
-install SweetAlert
+install SweetAlert : 
   npm install sweetalert
