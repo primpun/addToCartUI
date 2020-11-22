@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fffcf3;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  padding: 50px;
+  overflow: hidden;
+  background-color: #fffcf3;
+  position: relative;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #535353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav b {
+  float: none;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #535353;
+}
+
+.topnav c {
+  float: right;
+  display: block;
+  color: #535353;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav b:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav c:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  /* background-color: #ffe083; */
+  width: 25%;
+  padding: 30px;
+  margin-top: 15px;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+
+  background-color: #5b735a;
+  /* width: 50; */
+  height: 350px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+/* Clear floats after the columns */
+.item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}
+
+.name {
+  font-size: 32px;
+  color: #535353;
+}
+
+.column1 {
+  column-count: 2;
+  column-gap: 10px;
+  height: 100px;
+  color: #535353;
+  /* text-align: left; */
+}
+
+.button {
+  background-color: #fffcf3;
+  border: 2px solid #535353;
+  color: #535353;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  /* position: fixed;
+  top: 68%;
+  left: 75%; */
+}
+.button:hover {
+  /* background-color: #fffcf3; */
+  color: #5b735a;
+}
+
+.image {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
